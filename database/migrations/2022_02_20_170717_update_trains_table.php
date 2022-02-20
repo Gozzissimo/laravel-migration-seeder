@@ -15,27 +15,30 @@ class UpdateTrainsTable extends Migration
     {
         Schema::table('trains', function (Blueprint $table) 
         {
+            
             // Azienda
-            // Stazione di partenza
-            // Stazione di arrivo
-            // Orario di partenza
-            // Orario di arrivo
-            // Codice Treno
-            // Numero Carrozze
-            // In orario
-            // Cancellato
-
             $table->string('Azienda', 50);
+            // Stazione di partenza
             $table->string('Stazione di partenza', 100);
+            // Stazione di arrivo
             $table->string('Stazione di arrivo', 100);
+            // Data di partenza
             $table->time('Data di partenza', 4);
+            // Orario di partenza
             $table->time('Orario di partenza', 4);
+            // Data di arrivo
             $table->time('Data di arrivo', 4);
+            // Orario di arrivo
             $table->time('Orario di arrivo', 4);
+            // Codice Treno
             $table->string('Codice Treno', 50);
+            // Numero Carrozze
             $table->tinyInteger('Numero Carrozze');
+            // Binario
             $table->tinyInteger('Binario');
+            // In orario
             $table->boolean('In orario');
+            // Cancellato
             $table->boolean('Cancellato');
         });
     }
