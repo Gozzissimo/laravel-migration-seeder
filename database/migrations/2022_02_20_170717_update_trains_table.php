@@ -28,10 +28,13 @@ class UpdateTrainsTable extends Migration
             $table->string('Azienda', 50);
             $table->string('Stazione di partenza', 100);
             $table->string('Stazione di arrivo', 100);
+            $table->time('Data di partenza', 4);
             $table->time('Orario di partenza', 4);
+            $table->time('Data di arrivo', 4);
             $table->time('Orario di arrivo', 4);
             $table->string('Codice Treno', 50);
             $table->tinyInteger('Numero Carrozze');
+            $table->tinyInteger('Binario');
             $table->boolean('In orario');
             $table->boolean('Cancellato');
         });
@@ -49,10 +52,13 @@ class UpdateTrainsTable extends Migration
                 'Azienda',
                 'Stazione di partenza',
                 'Stazione di arrivo',
+                'Data di partenza',
                 'Orario di partenza',
+                'Data di arrivo',
                 'Orario di arrivo',
                 'Codice Treno',
                 'Numero Carrozze',
+                'Binario',
                 'In orario',
                 'Cancellato']);
         });
