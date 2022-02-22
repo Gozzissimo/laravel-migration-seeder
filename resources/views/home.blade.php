@@ -9,18 +9,18 @@ TrainTable
     @foreach ($trains as $train)
     <li>
 
-        <div>{{ $train['Azienda'] }}</div>
-        <div>{{ $train['Stazione di partenza'] }}</div>
-        <div>{{ $train['Stazione di arrivo'] }}</div>
-        <div>{{ $train['Data di partenza'] }}</div>
-        <div>{{ $train['Orario di partenza'] }}</div>
-        <div>{{ $train['Data di arrivo'] }}</div>
-        <div>{{ $train['Orario di arrivo'] }}</div>
-        <div>{{ $train['Codice Treno'] }}</div>
-        <div>{{ $train['Numero Carrozze'] }}</div>
-        <div>{{ $train['Binario'] }}</div>
-        <div>{{ $train['In orario'] > 0 ? 'In Orario' : '' }}</div>
-        <div>{{ $train['Cancellato'] > 0 ? 'Cancellato' : '' }}</div>
+        <div>{{ $train['azienda'] }}</div>
+        <div>{{ $train['stazione_di_partenza'] }}</div>
+        <div>{{ $train['stazione_di_arrivo'] }}</div>
+        <div>{{ $train['data_di_partenza'] }}</div>
+        <div>{{ $train['orario_di_partenza'] }}</div>
+        <div>{{ $train['data_di_arrivo'] }}</div>
+        <div>{{ $train['orario_di_arrivo'] }}</div>
+        <div>{{ $train['codice_treno'] }}</div>
+        <div>{{ $train['numero_carrozze'] }}</div>
+        <div>{{ $train['binario'] }}</div>
+        <div>{{ $train['in_orario'] > 0 ? 'In Orario' : '' }}</div>
+        <div>{{ $train['cancellato'] > 0 ? 'Cancellato' : '' }}</div>
     </li>
     @endforeach
 </ul>

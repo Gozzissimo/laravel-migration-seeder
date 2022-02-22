@@ -7,17 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 class Train extends Model
 {
     protected $fillable = [
-        'Azienda',
-        'Stazione di partenza',
-        'Stazione di arrivo',
-        'Data di partenza',
-        'Orario di partenza',
-        'Data di arrivo',
-        'Orario di arrivo',
-        'Codice Treno',
-        'Numero Carrozze',
-        'Binario',
-        'In orario',
-        'Cancellato'
+        'azienda',
+        'stazione_di_partenza',
+        'stazione_di_arrivo',
+        'data_di_partenza',
+        'orario_di_partenza',
+        'data_di_arrivo',
+        'orario_di_arrivo',
+        'codice_treno',
+        'numero_carrozze',
+        'binario',
+        'in_orario',
+        'cancellato'
     ];
 }
